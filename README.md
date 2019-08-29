@@ -11,3 +11,4 @@ An *integration test*, which identifies problems that occur at the interface lev
 API, but also ensures that the functional, performance, and reliability between units are integrated and working properly.
 
 ## Setting up integration testing
+To setup integration testing
