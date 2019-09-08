@@ -1,0 +1,11 @@
+Integration Testing Process Notes
+================================
+
+Notes
+=======
+Integration testing is also known as integration and testing (I&T), which is a software development process wherein program units
+are combined and tested as groupd in multiple ways.
+
+Resources
+==========
+https://martinfowler.com/bliki/IntegrationTest.html  -- goot high level overview of integration testing
