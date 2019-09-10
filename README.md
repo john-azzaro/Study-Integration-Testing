@@ -114,7 +114,7 @@ Remember, "it" takes two arguments: a string (which describes the test) and a ca
 Of course, tests vary in how they are structured and what they exactly test, but in this example we test a GET request.
 
 1. First, pass ```app``` to ```request```, which will automatically open the server for incoming requests.
-2. Second, stipulate the CRUD verb you wish to use. In this case, we want to "get" the information at the endpoint "users".
+2. Second, stipulate the REST verb you wish to use. In this case, we want to "get" the information at the endpoint "users".
 3. Third, chain ```then``` (when promises are available which they are in this example) with an anonymous function with a response that...
 4. ... Expects the response from a request to /users to yield a 200 status code.
 5. ... Expect the response from a request to /users to be a json object.
