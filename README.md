@@ -8,7 +8,9 @@
    * [STEP 3: Create a middleware for chai-http](#)
    * [STEP 4: Import server.js](#)
    * [STEP 5: Setup your test suite](#)
-
+   * [STEP 6: Add "before" and "after" functions BEFORE any tests](#)
+   * [STEP 7: Add an "it" function to do the unit test](#)
+   * [STEP 8: Write your test](#)
 
 <br>
 
