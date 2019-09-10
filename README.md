@@ -76,3 +76,17 @@ Use "describe" to group your tests.  *Describe* takes a string and a callback In
     }); 
 ```
 
+### STEP 6: Add "before" and "after" functions BEFORE any tests
+Before any of your tests run, you use the "before" hook to run the server.  In this example, the "runServer" function in the example *asynchronously* starts the server and returns a promise, which is returned with "return runServer".  After the tests run (in case there are other test modules to run), you use the "after" hook to close the server.  Remember, if there are other as well because if the server is already running, it will error out.
+```JavaScript
+    describe('Users', function() {
+
+        before(function() {                  // "before" with callback to run the server.
+            return runServer();
+        });
+        after(function() {                   // "after" with the callback to close the server.
+            return closeServer();
+        });
+
+    });
+```
