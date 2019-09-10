@@ -102,14 +102,20 @@ Remember, "it" takes two arguments: a string (which describes the test) and a ca
         after(function() {                            
             return closeServer();
         });
-        it('should list users when the client sends a GET request', function() {        // unit test
+        it('should list users when the client sends a GET request', function() {        // unit test with test intention
 
         });
     });
 ```
 
 ### STEP 8: Write your test
-For this twe first pass ```app``` to ```request```, which will automatically open the server for incoming requ
+
+
+
+#### 
+1. First, pass ```app``` to ```request```, which will automatically open the server for incoming requests.
+2. Second, stipulate the CRUD verb you wish to use. In this case, we want to "get" the information at the endpoint "users".
+3. Third, chain ```then``` (when promises are available which they are in this example).
 
 
 
@@ -123,10 +129,20 @@ Of course, tests vary in how they are structured and what they exactly test, but
     it('should list users when the client sends a GET request', function() { 
         return chai.request(app)                                                 // First, pass app to request which will automatically open server for incoming requests...
             .get('/users')                                                       // Second, stipulate the route type (i.e. GET) and the endpoint...
-            .then(function(res) {                                                // Third, test the status code and show that the data you get back from this test has a particuar schema.          ...
+            .then(function(res) {                                                // Third, test the status code and show that the data you get back from this test has a particuar schema.         ...
                 ...
                 ...             
             });
     });
 
 ```
+
+
+                    expect(res).to.have.status(200);                                 <== Expect the response from a request to /users to yield a 200 status code...
+                    expect(res).to.be.json;                                          <== Expect the response from a request to /users to be a json object...
+                    expect(res.body).to.be.a('array');                               <== Expect the response from a request to /users to be an array...
+                    expect(res.body.length).to.be.above.(0);                         <== Expect the response to be have a character count above 0...
+                    res.body.forEach(function(item) {                                <== For each item in the array, each item...
+                        expect(item).to.be.a.('object');                             <== ... each item in the array must be an object...
+                        expect(item).to.have.all.keys(                               <== ... each object in the array must have the following keys...
+                        'id', 'firstName', 'lastName', 'birthYear');               
