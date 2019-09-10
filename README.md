@@ -90,3 +90,43 @@ Before any of your tests run, you use the "before" hook to run the server.  In t
 
     });
 ```
+
+### STEP 7: Add an "it" function to do the unit test
+Remember, "it" takes two arguments: a string (which describes the test) and a callback function.
+```JavaScript
+    describe('Users', function() {
+
+        before(function() {                           
+            return runServer();
+        });
+        after(function() {                            
+            return closeServer();
+        });
+        it('should list users when the client sends a GET request', function() {        // unit test
+
+        });
+    });
+```
+
+### STEP 8: Write your test
+For this twe first pass ```app``` to ```request```, which will automatically open the server for incoming requ
+
+
+
+Of course, tests vary in how they are structured and what they exactly test, but in this example we test a GET request
+
+
+```JavaScript
+    ...
+    ...
+    ...
+    it('should list users when the client sends a GET request', function() { 
+        return chai.request(app)                                                 // First, pass app to request which will automatically open server for incoming requests...
+            .get('/users')                                                       // Second, stipulate the route type (i.e. GET) and the endpoint...
+            .then(function(res) {                                                // Third, test the status code and show that the data you get back from this test has a particuar schema.          ...
+                ...
+                ...             
+            });
+    });
+
+```
