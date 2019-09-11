@@ -17,7 +17,9 @@
 ## What is Integration Testing Study?
 When we perform a *unit test*, we test small, isolated peices of code. Although Unit testing can be useful for testing functions or block of code, but 
 doesnt really have any networking or database operations. That is where *integration testing* comes in by testing groups of units and finding out if there are
-any bugs when they are *integrated* together. The "integration testing study" exmines testing groups of modules (i.e. units, components, etc.).  In this study, 
+any bugs when they are *integrated* together. 
+
+The "integration testing study" exmines testing groups of modules (i.e. units, components, etc.).  In this study, 
 you will find a practical example of a basic GET integration tes (below in this readme) and a full integration test of a RESTful application. 
 
 <br>
