@@ -15,13 +15,17 @@
 <br>
 
 ## What is Integration Testing Study?
-The "Integration Testing Study" is a further study of unit testing with Mocha and Chai
+When we perform a *unit test*, we test small, isolated peices of code. Although Unit testing can be useful for testing functions or block of code, but 
+doesnt really have any networking or database operations. That is where *integration testing* comes in by testing groups of units and finding out if there are
+any bugs when they are *integrated* together. The "integration testing study" exmines testing groups of modules (i.e. units, components, etc.).  In this study, 
+you will find a practical example of a basic GET integration tes (below in this readme) and a full integration test of a RESTful application. 
 
 <br>
 
 ## What is an integration test?
 An **integration test** is a logical extension of *unit testing*, which tests smaller and more independant peices of code. When two or more units 
-are combined, they form an *interface*, and when two or more interfaces are combined they form a *component*.
+are combined, they form an *interface*, and when two or more interfaces are combined they form a *component*.  When we want to test whether or not there are
+any bugs in those components when they are put together that we need to perfom an integration test.
 
 An *integration test* determines if independently developed units work correctly when they are connected to one another.  Integration tests also 
 help identify problems that occur at the interface level and test the HTTP layer and how clients interact with your API.  Additionally, integration tests also 
