@@ -3,14 +3,14 @@
 * [What is Integration Testing Study?](#What-is-Integration-Testing-Study)
 * [What is an integration test?](#What-is-an-integration-test)
 * [How do you implement a basic (GET) integration test?](#How-do-you-implement-a-basic-(GET)-integration-test)
-   * [STEP 1: Install chai-http to your dev-dependencies](#)
-   * [STEP 2: Require "chai" and "chai-http](#)
-   * [STEP 3: Create a middleware for chai-http](#)
-   * [STEP 4: Import server.js](#)
-   * [STEP 5: Setup your test suite](#)
-   * [STEP 6: Add "before" and "after" functions BEFORE any tests](#)
-   * [STEP 7: Add an "it" function to do the unit test](#)
-   * [STEP 8: Write your test](#)
+   * [STEP 1: Install chai-http to your dev-dependencies](#Install-chai-http-to-your-dev-dependencies)
+   * [STEP 2: Require "chai" and "chai-http](#STEP-2:-Require-"chai"-and-"chai-http)
+   * [STEP 3: Create a middleware for chai-http](#STEP-3:-Create-a-middleware-for-chai-http)
+   * [STEP 4: Import server.js](#STEP-4:-Import-server.js)
+   * [STEP 5: Setup your test suite](#STEP-5:-Setup-your-test-suite)
+   * [STEP 6: Add "before" and "after" functions BEFORE any tests](#STEP-6:-Add-"before"-and-"after"-functions-BEFORE-any-tests)
+   * [STEP 7: Add an "it" function to do the unit test](#STEP-7:-Add-an-"it"-function-to-do-the-unit-test)
+   * [STEP 8: Write your test](#STEP-8:-Write-your-test)
 
 <br>
 
