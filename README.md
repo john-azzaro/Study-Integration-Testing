@@ -1,8 +1,8 @@
 # Integration Testing Study
 
-* [What is Integration Testing Study?](#)
-* [What is an integration test?](#)
-* [How do you implement a basic (GET) integration test](#)
+* [What is Integration Testing Study?](#What-is-Integration-Testing-Study)
+* [What is an integration test?](#What-is-an-integration-test)
+* [How do you implement a basic (GET) integration test?](#How-do-you-implement-a-basic-(GET)-integration-test)
    * [STEP 1: Install chai-http to your dev-dependencies](#)
    * [STEP 2: Require "chai" and "chai-http](#)
    * [STEP 3: Create a middleware for chai-http](#)
